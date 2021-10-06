@@ -1,3 +1,5 @@
+#include<iostream>
+
 int main()
 {
     string str[10], temp;
