@@ -17,3 +17,28 @@ class Solution {
         return ans;
     }
 };
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+
+        cin>>n;
+        vector<int> arr(n);
+
+        for(int i=0 ; i<n ; i++)
+            cin>>arr[i];
+
+        Solution ob;
+        vector<vector<int>> res = ob.NextPerms(arr,n);
+        for(int i=0; i<res.size(); i++)
+        {
+            for(int j=0; j<n; j++)
+            {
+                cout<<res[i][j]<<" ";
+            }
+            cout<<"\n";
+        }
+    }
+    return 0;
+}  
